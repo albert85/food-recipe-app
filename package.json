@@ -1,0 +1,8 @@
+{
+  "name": "food-recipe-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/albert85/food-recipe-app.git",
+  "author": "Olarewaju Temtope Albert <tmtpalbert@gmail.com>",
+  "license": "MIT"
+}
