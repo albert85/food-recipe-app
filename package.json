@@ -4,5 +4,30 @@
   "main": "index.js",
   "repository": "https://github.com/albert85/food-recipe-app.git",
   "author": "Olarewaju Temtope Albert <tmtpalbert@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon --exec babel-node server/src/index.js",
+    "build": "babel src --out-dir server/src/dist",
+    "start": "node server/src/dist/index.js",
+    "lint": "eslint server/src --fix"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.2",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
