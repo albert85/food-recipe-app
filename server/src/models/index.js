@@ -1,10 +1,7 @@
-import { buildSchema } from 'graphql';
+import Userdb from './user';
 
-// GRAPHQL Schema
-const schema = buildSchema(`
-   type Query {
-     message: String
-   }
- `);
-
-export default schema;
+const models = {
+  Userdb,
+};
+// Create an express server and a GraphQL endpoints
+export default models;
