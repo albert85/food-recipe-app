@@ -1,0 +1,13 @@
+# import User from './userSchema.graphql'
+# import Menu from './menuSchema.graphql'
+
+type Query {
+ description: String,
+ user: [User],
+ menu: [Menu]
+}
+
+type Mutation {
+  registerUser(email: String!, password: String!, firstName: String!, lastName: String!, imageUrl: String): User,
+  createMenu(name: String!, userId: String, imageUrl: String!): Menu
+}

@@ -9,7 +9,7 @@ const db = mongoose.connect(
 );
 
 const server = new GraphQLServer({
-  typeDefs: './server/src/typedefs.graphql',
+  typeDefs: './server/src/schema/index.graphql',
   resolvers,
   context: req => ({ ...req, db }),
 });

@@ -1,0 +1,6 @@
+
+type Menu {
+    name: String,
+    userId: String,
+    ImageUrl: String
+}
